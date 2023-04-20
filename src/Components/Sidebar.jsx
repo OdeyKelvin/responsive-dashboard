@@ -4,7 +4,7 @@ import sethings from '../assets/sethings.svg'
 import users from '../assets/users.svg'
 import addeduser from '../assets/addeduser.svg'
 import affiliate from '../assets/affiliate.svg'
-import Line1 from '../assets/line1.svg'
+import line2 from '../assets/line2.svg'
 import plus from '../assets/plus.svg'
 
 import React from 'react'
@@ -32,7 +32,7 @@ export default function Sidebar() {
          <a className=' relative bottom-20' href='#Added User'>Added User</a>
          <div>  <img src={affiliate} className=' relative bottom-[60px] right-7' alt=''/>  </div>
          <a className=' relative bottom-24' href='#Affilate'>Affiliate</a>
-         <img src={ Line1} className=' relative bottom-[90px] right-7' alt=''/>
+         <img src={line2} className=' relative bottom-[90px] -left-10' alt=''/>
          <div><img src={Vector} className=' relative bottom-[80px] right-7' alt=''/></div>
          <a className=' relative bottom-[120px]' href='#Profile'>Profile</a>
          <div>  <img src={users} className=' relative bottom-[105px] right-7' alt=''/>  </div>
