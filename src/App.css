@@ -1,0 +1,18 @@
+.line{
+    width: 180px;
+    height: 0px;
+    opacity: 0.5;
+    border: 1px solid white
+}
+
+.li{
+    display: inline-block;
+}
+.disktop li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.frame12{
+    box-shadow: 0px 4px 148px rgba(0, 0, 0, 0.02);
+}
