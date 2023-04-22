@@ -63,7 +63,7 @@ const Maincontent = () => {
                   
 
                   <div className=' flex justify-between items-center mt-2 mb-2'>
-                         <h6 className=' font-semibold text-[16px] text-[#000000]'>Highfidelity Design</h6>
+                         <h6 className=' font-semibold text-[16px] text-[#000000]'>Usability testing</h6>
                          <img src={threedot} className=' relative' alt='cardimage'/>
                         </div>
                      <div className=' text-gray '>
@@ -107,11 +107,11 @@ const Maincontent = () => {
 
                  <div>
               <div className='grid2 relative mb-4'> 
-                   <input type='text' placeholder='Inprogress' className=' rounded-md py-3 ml-[176px] mt-4 px-9 w-50 bg-[#F4F6F8] text-[#858A93]'></input>
-                   <span className=' grid place-content-center absolute rounded shadow-lg-white text-white left-[400px] -translate-x-1/2 top-[35%] w-9 h-9 bg-slate-950 '>1</span>
+                   <input type='text' placeholder='Inprogress' className=' rounded-md py-3 ml-[210px] mt-4 px-9 w-50 bg-[#F4F6F8] text-[#858A93]'></input>
+                   <span className=' grid place-content-center absolute rounded shadow-lg-white text-white left-[430px] -translate-x-1/2 top-[35%] w-9 h-9 bg-slate-950 '>1</span>
                      </div>
 
-                  <div className=' absolute bg-white  rounded-xl p-4 w-[270px] left-[600px] h-[350px]'> 
+                  <div className=' absolute bg-white  rounded-xl p-4 w-[270px] left-[630px] h-[350px]'> 
                     <img src={image2} className=' relative' alt='cardimage'/>
 
 
@@ -169,8 +169,8 @@ const Maincontent = () => {
                  <div>
                  <div>
               <div className='grid2 relative mb-3'> 
-                   <input type='text' placeholder='Completed' className=' rounded-md py-3 ml-[45px] mt-4 px-9 w-50 bg-[#F4F6F8] text-[#858A93]'></input>
-                   <span className=' grid place-content-center absolute rounded shadow-lg-white text-white left-[267px] -translate-x-1/2 top-[35%] w-9 h-9 bg-slate-950 '>2</span>
+                   <input type='text' placeholder='Completed' className=' rounded-md py-3 ml-[126px] mt-4 px-9 w-50 bg-[#F4F6F8] text-[#858A93]'></input>
+                   <span className=' grid place-content-center absolute rounded shadow-lg-white text-white left-[350px] -translate-x-1/2 top-[35%] w-9 h-9 bg-slate-950 '>2</span>
                      </div>
 
 
@@ -178,7 +178,7 @@ const Maincontent = () => {
                      
                      
                      
-             <div className=' absolute bg-white  rounded-xl p-4 w-[270px] left-[30px] h-[200px] -bottom-[200px]'>
+             <div className=' absolute bg-white  rounded-xl p-4 w-[270px] left-[110px] h-[200px] -bottom-[200px]'>
                   
 
                   <div className=' flex justify-between items-center mt-2 mb-2'>
@@ -223,7 +223,7 @@ const Maincontent = () => {
 
 
 
-                  <div className=' absolute bg-white -bottom-[226px]  rounded-xl p-4 w-[270px] left-[900px] h-[350px]'> 
+                  <div className=' absolute bg-white -bottom-[226px]  rounded-xl p-4 w-[270px] left-[980px] h-[350px]'> 
                   <img src={image3} className=' relative' alt='cardimage'/>
 
 
