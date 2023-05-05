@@ -1,41 +1,64 @@
-import React from 'react'
+import React from 'react';
 import image8 from '../assets/image8.svg'
 import bordview from '../assets/bordview.svg'
 import listview from '../assets/listview.svg'
 import participantview from '../assets/participantview.svg'
 import powerview from '../assets/powerview.svg'
-import plus2 from '../assets/plus2.svg'
 
-export default function Header() {
+import plus from '../assets/plus2.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+export default function Header(props) {
+
+  const Handlenav = () => {
+    props.sidemenuHandler()
+  }
   return (
-    <div className=''>
-            <div className='header first: w-[1230px] h-[220px] bg-white '>
-                <div className=' relative text-black h-[46px] left-[300px] text-[36px] font-semibold w-[823px] top-[30px]'>New Campaign Run</div>
-                <div className=' relative top-[40px] text-[#B8B9BD]  font-normal text-[14px] ml-[300px]  '>A new campaign launch work for brand new feature in May month</div>
-               <div className=' absolute  bg-black text-white h-[42px] pt-2 pl-5 rounded-[8px]  w-[160px] left-[1100px] top-[35px] font-normal '>ADD MEMBERS</div>
-               <div className='members mb-6 '>
-               
-               <div>  <img src={image8} className=' relative top-[100px] left-[300px] rounded-[15px]' alt=''/>  </div>
-               <div>  <img src={image8} className=' relative top-[68px] left-[326px] rounded-[15px]' alt=''/>  </div>
-               <div>  <img src={image8} className=' relative top-[36px] left-[353px] rounded-[15px]' alt=''/>  </div>
-                <div className=' relative -top-[25px] text-[#B8B9BD]  font-normal text-[14px] ml-[400px] mt-9'>8 memeber</div>
-               </div>
-               <div className=' absolute flex left-[740px] top-[170px] space-x-4 text-[#B8B9BD] font-medium text-[14px]'>
-                 <img src={participantview} className=' relative left-2 ' alt=''/>
-                <a>Participants View</a>
-                <img src={bordview} className=' relative left-2' alt=''/>
+    <div className='md:px-14 px-6 space-y-10 py-5 md:py-12 z-10 sticky top-0 backdrop-blur-md'>
+      <div className='md:flex justify-between h-fit'>
 
-                <a>Board View</a>
-                <img src={listview} className=' relative left-2' alt=''/>
+        <div className=' absolute md:hidden right-4 top-32'>
+        <FontAwesomeIcon icon={faBars} onClick={Handlenav} />
+          </div>
+        <div>
+          <h1 className='text-4xl font-semibold'>New Campaign Run</h1>
+          <p className='my-2 text-[#B8B9BD]'>A new campaign launch work for brand new feature in May month.</p>
+        </div>
+        <button className='bg-black rounded-lg md:self-start px-2 md:px-5 py-2.5 whitespace-nowrap self-center text-white'>ADD MEMBERS</button>
+      </div>
+      <div className='flex justify-between'>
+        <div className='flex gap-2 h-full '>
+          <div className='flex -space-x-4'>
+            <img src={image8} className='rounded-full h-8 w-8' alt='' />
+            <img src={image8} className='rounded-full h-8 w-8' alt='' />
+            <img src={image8} className='rounded-full h-8 w-8' alt='' />
+            <img src={image8} className='rounded-full h-8 w-8' alt='' />
+          </div >
+          <div className='self-center text-[#B8B9BD]  font-normal text-[14px]'>8 memeber</div>
+        </div>
+        <div className='flex space-x-6 text-[#B8B9BD] font-medium text-md'>
+          <div className='flex gap-4'>
+            <img src={participantview} className='' alt='' />
+            <label className=' hidden xl:block whitespace-nowrap self-center'>Participants View</label>
+          </div>
+          <div className='flex gap-4'>
+            <img src={bordview} className='' alt='' />
+            <label className=' hidden xl:block whitespace-nowrap self-center'>Board View</label>
+          </div>
+          <div className='flex gap-4'>
+            <img src={listview} className='' alt='' />
+            <label className=' hidden xl:block whitespace-nowrap self-center'>List View</label>
+          </div>
+          <div className='flex gap-4'>
+            <img src={powerview} className='' alt='' />
+            <label className=' hidden xl:block whitespace-nowrap self-center'>Power View</label>
+          </div>
+          <img src={plus} alt="plus" className='w-5' />
 
-                <a>list View</a>
-                <img src={powerview} className=' relative left-2' alt=''/>
+        </div>
 
-                <a>Power View</a>
-                <img src={plus2} className='' alt=''/>
-
-               </div>
-            </div>
-    </div>
+      </div >
+    </div >
   )
 }
