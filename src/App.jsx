@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
 import './App.css'
-import Header from './components/Header'
-import Grid1 from './components/Grid1'
-import Grid2 from './components/Grid2'
-import Grid3 from './components/Grid3'
-import Sidebar from './components/Sidebar'
+import Header from './Components/Header'
+import Grid1 from './Components/Grid1'
+import Grid2 from './Components/Grid2'
+import Grid3 from './Components/Grid3'
+import Sidebar from './Components/Sidebar'
 function App() {
   const sideMenuContainer = useRef(null)
   const mainContainer = useRef(null)
