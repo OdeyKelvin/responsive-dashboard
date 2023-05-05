@@ -8,7 +8,7 @@ import affiliate from '../assets/affiliate.svg'
 import plus from '../assets/plus.svg'
 function Sidebar() {
     return (
-        <div className=' bg-[#1D1042] z-20 p-5 text-white w-full top-0 sticky h-screen'>
+        <div className=' bg-[#1D1042] z-20 p-5 text-white w-full overflow-y-auto top-0 sticky h-screen'>
             <div className="flex gap-5 bg-[#45269C] px-8 py-3 my-5 rounded-lg">
                 <img src={Vector} className='' alt='' />
                 <h1 className=''>
